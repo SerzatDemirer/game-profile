@@ -89,12 +89,14 @@ nav {
     border: none;
     margin: 30px 0px 0px 30px;  
 }
-
 .cover {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
 }
 .cover img{
-    height: 60vh;
+    height: 40vh;
     filter: drop-shadow(0px 6px 4px black);
     animation: drop 2s ease;
 }
@@ -141,9 +143,38 @@ nav {
     }
 }
 
-@media screen  (max-width: 1024px) {
+@media screen and (max-width: 1024px) 
+{
     .presentation {
         flex-direction: column;
     }
-    
+    .introduction {
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .intro-text h1 {
+        font-size: 30px;
+
+    }
+    .intro-text p {
+        font-size: 18px;
+    }
+    .cta {
+        padding: 10px 0px 0px 0px;
+    }
+    .labtop-select {
+        bottom: 5%;
+        right: 50%;
+        width: 50%;
+        transform: translate(50%, 5%);
+    }
+    .cover-img {
+        height: 50%;
+    }
+    .small-circle,
+    .medium-circle,
+    .big-circle {
+        opacity: 0.2;
+    }
+
 }
